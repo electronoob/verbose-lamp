@@ -8,10 +8,14 @@
     </head>
     <body>
 	<h1>yup that works great</h1>
-        <br/>
         <canvas id="canvas" width="800" height="500"></canvas>
         <script src="extras.js"></script> 
         <script>
+            var ships = [];
+            x = 100;
+            y = 100;
+            health = 100;
+            ships.push ( {x,y,health,} );
             function draw() {
                 //drawclear = false;
                 ctx.fillText("testing",width/2,height/2);
